@@ -1,0 +1,22 @@
+## Initialize Terraform
+terraform init
+
+
+## Validate Terraform Configuration
+terraform validate -var-file="secret.tfvars"
+
+
+## Preview Terraform Execution Plan with Variable File
+terraform plan -var-file="secret.tfvars"
+
+
+## Apply Terraform Configuration with Variable File
+terraform apply -var-file="secret.tfvars"
+
+
+## Apply Terraform Configuration Automatically (No Confirmation)
+terraform apply -var-file="secret.tfvars" --auto-approve
+
+
+## Destroy Terraform Infrastructure with Variable File
+terraform destroy -var-file="secret.tfvars"
